@@ -1,4 +1,4 @@
-package com.yankang.androidanimalexamples;
+package com.yankang.androidanimexamples;
 
 import org.junit.Test;
 

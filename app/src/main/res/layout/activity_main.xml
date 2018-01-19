@@ -6,19 +6,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="10dp"
-    tools:context="com.yankang.androidanimalexamples.MainActivity">
+    tools:context="com.yankang.androidanimexamples.MainActivity">
 
     <Button
-        android:id="@+id/bnt_to_tween"
+        android:id="@+id/btn_to_docs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tween 动画"/>
+        android:textAllCaps="false"
+        android:text="docs"/>
 
     <Button
-        android:id="@+id/bnt_to_frame"
+        android:id="@+id/btn_to_tween"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Frame 动画"/>
+        android:textAllCaps="false"
+        android:text="TweenAnim"/>
 
+    <Button
+        android:id="@+id/btn_to_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="FrameAnim"/>
+
+    <Button
+        android:id="@+id/btn_to_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="PropertyAnim"/>
+
+    <Button
+        android:id="@+id/btn_to_interpolator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Interpolator"/>
+
+    <Button
+        android:id="@+id/btn_to_evaluators"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Evaluators"/>
+
+    <Button
+        android:id="@+id/btn_to_demos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Demos"/>
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.yankang.androidanimalexamples;
+package com.yankang.androidanimexamples;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

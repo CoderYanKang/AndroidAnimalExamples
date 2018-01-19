@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="interpolator_array">
+        <item>AccelerateInterpolator(加速)</item>
+        <item>OvershootInterpolator(末尾溢出弹回)</item>
+        <item>AccelerateDecelerateInterpolator(先加速再减速)</item>
+        <item>AnticipateInterpolator(开始溢出)</item>
+        <item>AnticipateOvershootInterpolator(开始结尾溢出)</item>
+        <item>BounceInterpolator(结尾弹球减速)</item>
+        <item>CycleInterpolator(周期运动回到开始点)</item>
+        <item>DecelerateInterpolator(减速)</item>
+        <item>LinearInterpolator(匀速)</item>
+        <item>MyInterpolator(自定义插值器)</item>
+    </string-array>
+
+</resources>
