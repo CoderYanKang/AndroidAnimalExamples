@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.yankang.androidanimalexamples.MainActivity">
+
+    <Button
+        android:id="@+id/bnt_to_tween"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tween 动画"/>
+
+    <Button
+        android:id="@+id/bnt_to_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Frame 动画"/>
+
+
+</LinearLayout>
