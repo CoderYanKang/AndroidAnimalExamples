@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="interpolator_array">
+
         <item>AccelerateInterpolator(加速)</item>
         <item>OvershootInterpolator(末尾溢出弹回)</item>
         <item>AccelerateDecelerateInterpolator(先加速再减速)</item>
@@ -12,6 +13,19 @@
         <item>DecelerateInterpolator(减速)</item>
         <item>LinearInterpolator(匀速)</item>
         <item>MyInterpolator(自定义插值器)</item>
+
     </string-array>
 
+    <string-array name="property_name">
+
+        <item>TranslationX</item>
+        <item>TranslationY</item>
+        <item>ScaleX</item>
+        <item>ScaleY</item>
+        <item>Alpha</item>
+        <item>Rotation</item>
+        <item>RotationX</item>
+        <item>RotationY</item>
+
+    </string-array>
 </resources>

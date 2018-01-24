@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choice Interpolator"/>
+
+        <Spinner
+            android:id="@+id/act_property_interpolator"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/interpolator_array" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/act_property_property_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/property_name"/>
+
+            <TextView
+                android:id="@+id/act_property_property_value_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value: "/>
+
+            <EditText
+                android:id="@+id/act_property_property_value"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:text="100"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/act_property_go_value_animator"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_margin="10dp"
+                android:layout_gravity="right"
+                android:text="Go ValueAnimator"/>
+
+            <Button
+                android:id="@+id/act_property_go_object_animator"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="right"
+                android:textAllCaps="false"
+                android:text="Go ObjectAnimator"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/property_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/property_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/act_property_animator_set"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="AnimatorSet"/>
+
+        <Button
+            android:id="@+id/act_property_animator_set_together"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="together"/>
+
+        <Button
+            android:id="@+id/act_property_animator_set_Sequentially"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Sequentially"/>
+
+    </LinearLayout>
+
+</FrameLayout>

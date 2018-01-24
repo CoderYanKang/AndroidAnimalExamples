@@ -48,7 +48,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAllCaps="false"
-        android:text="Evaluators"/>
+        android:text="TypeEvaluator"/>
+
+    <Button
+        android:id="@+id/btn_to_transition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Transition"/>
 
     <Button
         android:id="@+id/btn_to_demos"

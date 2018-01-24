@@ -18,6 +18,10 @@
         </activity>
 
         <activity android:name="com.yankang.androidanimexamples.TweenActivity"/>
+        <activity android:name="com.yankang.androidanimexamples.FrameActivity"/>
+        <activity android:name=".PropertyAnimActivity"/>
+        <activity android:name=".PropertyAnimJavaActivity"/>
+        <activity android:name=".PropertyAnimXmlActivity"/>
     </application>
 
 </manifest>

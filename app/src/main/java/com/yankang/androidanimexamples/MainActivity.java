@@ -15,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
     Button btnToTween;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
     }
 
     @OnClick(R.id.btn_to_tween)
@@ -28,8 +28,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.btn_to_frame)
-    public void toFrame() {
-
+    public void toFrame()
+    {
+        startActivity(new Intent(this , FrameActivity.class));
     }
 
+    @OnClick(R.id.btn_to_property)
+    public void toProperty()
+    {
+        startActivity(new Intent(this , PropertyAnimActivity.class));
+    }
 }

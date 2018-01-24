@@ -26,6 +26,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Spinner;
 
+import com.yankang.androidanimexamples.Interpolator.MyInterpolator;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -62,7 +64,7 @@ public class TweenActivity extends AppCompatActivity implements AdapterView.OnIt
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_tween_animal_layout);
+        setContentView(R.layout.act_tween_anim_layout);
         ButterKnife.bind(this);
         initView();
     }
@@ -119,9 +121,10 @@ public class TweenActivity extends AppCompatActivity implements AdapterView.OnIt
     }
 
 
-    private void startAnimal(int btnId, int doType, int posi) {
-        Animation tweenAnimal = null;
+    private void startAnimal(int btnId, int doType, int posi)
+    {
 
+        Animation tweenAnimal = null;
         switch (btnId) {
             default:
             case R.id.go_translate:
@@ -163,7 +166,8 @@ public class TweenActivity extends AppCompatActivity implements AdapterView.OnIt
 
             case R.id.go_rotate:
 
-                if (doType == TWEEN_XML) {
+                if (doType == TWEEN_XML)
+                {
                     tweenAnimal = AnimationUtils.loadAnimation(this, R.anim.roate_anim);
                 } else {
                     tweenAnimal = new RotateAnimation(0f, 360f, 100f, 100f);
@@ -229,12 +233,14 @@ public class TweenActivity extends AppCompatActivity implements AdapterView.OnIt
                 break;
 
             case 9:
-                interpolator = new LinearInterpolator();
+                interpolator = new MyInterpolator();
                 break;
         }
 
         return interpolator;
     }
+
+
 
     private void startAnimalSet(boolean isShareInterPolator)
     {
