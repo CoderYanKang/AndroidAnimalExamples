@@ -7,6 +7,8 @@ import android.animation.ValueAnimator;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.FloatProperty;
+import android.util.Property;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
@@ -55,6 +57,13 @@ public class PropertyAnimJavaActivity extends AppCompatActivity
         ButterKnife.bind(this);
 
         initView();
+
+        propertyView.animate().translationX(200f).alpha(0.1f)
+                .rotation(360f).alpha(1f)
+                .translationX(-200f)
+                .setDuration(3000)
+                .start();
+
     }
 
 
@@ -279,7 +288,8 @@ public class PropertyAnimJavaActivity extends AppCompatActivity
             case Constant.PRO_ALPHA:
 
                 float alpha = value >1 ?  0.5f : value;
-                objectAnimator = ObjectAnimator.ofFloat(propertyView , "alpha" , alpha);
+//                objectAnimator = ObjectAnimator.ofFloat(propertyView , "alpha" , alpha);
+                objectAnimator = ObjectAnimator.ofFloat(propertyView , PROGRESS_PROPERTY , alpha);
 
                 break;
 
@@ -303,6 +313,20 @@ public class PropertyAnimJavaActivity extends AppCompatActivity
         objectAnimator.setInterpolator(getInterPolator(interPolatorPosi));
         objectAnimator.start();
     }
+
+    private final Property<ImageView, Float> PROGRESS_PROPERTY = new FloatProperty<ImageView>("al") {
+        @Override
+        public void setValue(ImageView imageView, float value)
+        {
+            imageView.setAlpha(value);
+        }
+
+        @Override
+        public Float get(ImageView imageView) {
+            return  imageView.getAlpha();
+        }
+    };
+
 
     private void goAnimatorSet(int interPosi)
     {

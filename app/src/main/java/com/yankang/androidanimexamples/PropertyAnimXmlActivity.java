@@ -33,8 +33,8 @@ import butterknife.OnClick;
  * Created by yankang on 2018/1/24.
  */
 
-public class PropertyAnimXmlActivity extends AppCompatActivity {
-
+public class PropertyAnimXmlActivity extends AppCompatActivity
+{
 
     @BindView(R.id.act_property_property_value_tips)
     TextView actPropertyPropertyValueTips;

@@ -38,4 +38,21 @@ public class MainActivity extends AppCompatActivity {
     {
         startActivity(new Intent(this , PropertyAnimActivity.class));
     }
+
+    @OnClick(R.id.btn_to_interpolator)
+    public void toInterpolator()
+    {
+        startActivity(new Intent(this , InterpolatorActivity.class));
+    }
+
+    @OnClick(R.id.btn_to_evaluators)
+    public void toEvaulators()
+    {
+        startActivity(new Intent(this , TypeEvaluatorActivity.class));
+    }
+    @OnClick(R.id.btn_to_transition)
+    public void toTransition()
+    {
+        startActivity(new Intent(this , TransitionActivity.class));
+    }
 }

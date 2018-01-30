@@ -9,12 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.yankang.androidanimexamples.MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
+        <activity android:name="com.yankang.androidanimexamples.MainActivity">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+
             </intent-filter>
+
         </activity>
 
         <activity android:name="com.yankang.androidanimexamples.TweenActivity"/>
@@ -22,6 +26,13 @@
         <activity android:name=".PropertyAnimActivity"/>
         <activity android:name=".PropertyAnimJavaActivity"/>
         <activity android:name=".PropertyAnimXmlActivity"/>
+        <activity android:name=".InterpolatorActivity"/>
+        <activity android:name=".TypeEvaluatorActivity"/>
+        <activity android:name=".TransitionActivity"/>
+        <activity android:name=".Transitions.SceneChangeActivity"/>
+        <activity android:name=".Transitions.ViewTransitionActivity"/>
+        <activity android:name=".AppCompatTransition.AppCompatTransitionActivity"/>
+
     </application>
 
 </manifest>

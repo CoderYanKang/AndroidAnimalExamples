@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/AccelerateInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AccelerateInterpolator"/>
+
+    <TextView
+        android:id="@+id/OvershootInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="OvershootInterpolator"/>
+
+    <TextView
+        android:id="@+id/AccelerateDecelerateInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AccelerateDecelerateInterpolator"/>
+
+    <TextView
+        android:id="@+id/AnticipateInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AnticipateInterpolator"/>
+
+    <TextView
+        android:id="@+id/AnticipateOvershootInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="AnticipateOvershootInterpolator"/>
+
+    <TextView
+        android:id="@+id/BounceInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="BounceInterpolator"/>
+
+    <TextView
+        android:id="@+id/CycleInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="CycleInterpolator"/>
+
+    <TextView
+        android:id="@+id/DecelerateInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="DecelerateInterpolator"/>
+
+    <TextView
+        android:id="@+id/LinearInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="LinearInterpolator"/>
+
+    <TextView
+        android:id="@+id/MyInterpolator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="MyInterpolator"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="start"/>
+
+</LinearLayout>

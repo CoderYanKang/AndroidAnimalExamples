@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:clickable="true"
+    android:background="#e5e5e5">
+
+    <FrameLayout
+        android:id="@+id/view_root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="30dp">
+
+        <ImageView
+            android:id="@+id/iv_01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|left"
+            android:background="#ff0067"/>
+
+        <ImageView
+            android:id="@+id/iv_02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="top|right"
+            android:background="#00ff67"/>
+
+        <ImageView
+            android:id="@+id/iv_03"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|left"
+            android:background="#442244"/>
+
+        <ImageView
+            android:id="@+id/iv_04"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom|right"
+            android:background="#6e66e9"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/doc_txt"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/to_fade"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Fade"/>
+
+        <Button
+            android:id="@+id/to_slide"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Slide"/>
+
+        <Button
+            android:id="@+id/to_explode"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Explode"/>
+
+    </LinearLayout>
+</LinearLayout>
